@@ -52,7 +52,8 @@ const Login = () => {
       <div className="container content2">
         <div className="sign-up-container">
           <form className="sign-up-form" onSubmit={formik.handleSubmit}>
-            <h2 style={{ fontStyle: "italic" }}>Login</h2>
+            <h2 style={{ fontStyle: "italic", marginBottom:" 30px",
+  fontSize:" 27px" }}>Login</h2>
 
             <label htmlFor="email">Email:</label>
             <input
