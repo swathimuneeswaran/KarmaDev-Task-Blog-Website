@@ -50,7 +50,7 @@ const Register = () => {
             onSubmit={formik.handleSubmit}
             style={{ backgroundColor: "transparent" }}
           >
-            <h2 style={{fontStyle:"italic"}}>Register</h2>
+            <h2 className="register">Register</h2>
 
             <label htmlFor="name">Name</label>
             <input

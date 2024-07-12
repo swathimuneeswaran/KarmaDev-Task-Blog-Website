@@ -13,6 +13,12 @@
   background-image: radial-gradient(grey, black);
 }
 
+.register{
+  font-style: italic;
+  margin-bottom: 30px;
+  font-size: 27px;
+}
+
 .sign-up-form {
   width: 350px;
   padding: 20px;
