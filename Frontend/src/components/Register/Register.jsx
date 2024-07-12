@@ -14,8 +14,7 @@ const formSchema = Yup.object({
 
 const Register = () => {
   const navigate = useNavigate();
-  // const baseurl = "https://petty-cash-back-end-06d4.onrender.com";
-  // const baseurl="http://localhost:5000"
+
 
   const formik = useFormik({
     initialValues: {
@@ -23,19 +22,19 @@ const Register = () => {
       email: "",
       password: "",
     },
-    // Inside the onSubmit function in your React component
+    
     onSubmit: async (values) => {
-      // console.log("Form values:", values); // Log form values before sending the request
+     
 
       try {
         const response = await Axios.post(`/api/auth/signup`, values);
         console.log("Response from backend:", response.data);
         navigate("/login")
         toast.success("Successfully registered😊")
-        // Handle response from the backend
+        
       } catch (error) {
         console.error("Error:", error);
-        // Handle error
+        
       }
     },
     validationSchema: formSchema,

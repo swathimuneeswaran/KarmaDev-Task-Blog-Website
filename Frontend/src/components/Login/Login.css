@@ -79,19 +79,19 @@
   
   @media screen and (max-width: 480px) {
     .sign-up-form {
-      width: 90%; /* Further adjust width for smaller screens */
+      width: 90%;
     }
   
     input[type="text"],
     input[type="email"],
     input[type="password"] {
-      font-size: 14px; /* Decrease font size for inputs */
+      font-size: 14px; 
     }
   }
   
   @media screen and (max-width: 480px) {
     .container {
-      width: 100%; /* Further adjust width for smaller screens */
+      width: 100%; 
     }
     .sign-up-form {
       width: 70%;

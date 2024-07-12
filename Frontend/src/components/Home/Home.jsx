@@ -15,23 +15,23 @@ const Home = () => {
 
   const fetchPosts = async () => {
     try {
-      const res = await axios.get(`http://localhost:5000/api/posts?page=${currentPage}`);
+      const res = await axios.get(`/api/posts?page=${currentPage}`);
       setPosts(res.data.posts);
       setPageCount(res.data.totalPages);
     } catch (err) {
       console.error('Error fetching posts:', err);
-      // Handle error: display an error message or retry logic
+      
     }
   };
 
   const handleDelete = async (id) => {
     try {
       await axios.delete(`/api/posts/${id}`);
-      // Update local state to reflect the deletion
+
       setPosts(posts.filter(post => post._id !== id));
     } catch (err) {
       console.error('Error deleting post:', err);
-      // Handle error: display an error message or retry logic
+      
     }
   };
 

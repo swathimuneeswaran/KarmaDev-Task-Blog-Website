@@ -3,7 +3,7 @@ import Post from "../models/postModel.js";
 export const getPosts = async (req, res) => {
   try {
     const page = parseInt(req.query.page) || 0;
-    const limit = 10; // Number of posts per page
+    const limit = 10; 
     const totalPosts = await Post.countDocuments();
     const totalPages = Math.ceil(totalPosts / limit);
 

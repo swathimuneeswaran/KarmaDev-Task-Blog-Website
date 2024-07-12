@@ -13,7 +13,7 @@ const formSchema = Yup.object({
 });
 
 const Login = () => {
-  // const baseurl="https://petty-cash-back-end-06d4.onrender.com"
+
   const navigate = useNavigate();
 
   const formik = useFormik({
@@ -33,11 +33,11 @@ const Login = () => {
         .then((response) => {
           if (response.data) {
             localStorage.setItem("user", JSON.stringify(response.data));
-            // localStorage.setItem("mail", response.data.email);
+            
             navigate("/home");
             toast.success("LoggedIn");
           }
-          // console.log(response);
+       
         })
         .catch((err) => {
           console.log(err);
@@ -46,27 +46,6 @@ const Login = () => {
     validationSchema: formSchema,
   });
 
-  // axios.defaults.withCredentials = true;
-  // const handleSubmit = (e) => {
-  //   e.preventDefault();
-  //   axios.post(`${baseurl}/api/manager/login`, {
-  //     email,
-  //     password,
-  //   },
-  //   {
-  //     withCredentials:true
-  //   })
-  //     .then((response) => {
-  //       if (response.data) {
-  //         navigate("/profile");
-  //         toast.success("LoggedIn");
-  //       }
-  //       console.log(response);
-  //     })
-  //     .catch((err) => {
-  //       console.log(err);
-  //     });
-  // };
 
   return (
     <>

@@ -26,8 +26,8 @@
   
   .box_blog {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); /* Adjust width as needed */
-    grid-auto-rows: minmax(300px, auto); /* Rows will expand based on content */
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); 
+    grid-auto-rows: minmax(300px, auto); 
     gap: 20px;
     padding: 20px;
     text-align: center;
@@ -37,8 +37,8 @@
   
   .card {
     position: relative;
-    width: 280px; /* Adjust width as needed */
-    height: auto; /* Adjust height as needed */
+    width: 280px; 
+    height: auto;
     max-height:500px;
     padding-bottom: 40px;
     background: #07182E;
@@ -62,8 +62,8 @@
     right: -5px;
     bottom: -5px;
     background-image: linear-gradient(180deg, rgb(0, 183, 255), rgb(255, 48, 255));
-    border-radius: 25px; /* Adjust to match card's border radius */
-    z-index: -2; /* Ensure it is behind everything else */
+    border-radius: 25px;
+    z-index: -2; 
     animation: rotBGimg 3s linear infinite;
   }
   
@@ -84,8 +84,8 @@
     right: 5px;
     bottom: 5px;
     background: #07182E;
-    border-radius: 15px; /* Adjust to be slightly smaller than card's border radius */
-    z-index: -1; /* Ensure it is between the card content and the ::before element */
+    border-radius: 15px; 
+    z-index: -1; 
   }
   
   

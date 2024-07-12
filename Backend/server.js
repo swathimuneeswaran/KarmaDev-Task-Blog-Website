@@ -11,7 +11,7 @@ dotenv.config();
 
 const PORT = process.env.PORT || 8000;
 
-// Create __dirname equivalent in ES modules
+
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
@@ -20,18 +20,7 @@ const allowedOrigins = ['http://localhost:5173'];
 
 app.use(express.json());
 
-// const corsOptions = {
-//   origin: function (origin, callback) {
-//     // Check if the origin is in the allowedOrigins array
-//     if (allowedOrigins.indexOf(origin) !== -1 || !origin) {
-//       callback(null, true);
-//     } else {
-//       callback(new Error('Not allowed by CORS'));
-//     }
-//   },
-//   // Additional options can be added here, such as credentials, methods, etc.
-// };
-// app.use(cors(corsOptions));
+
 
 app.use("/api/auth", userRoutes);
 app.use('/api/posts', postRoutes);

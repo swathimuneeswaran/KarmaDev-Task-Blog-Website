@@ -18,7 +18,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-left: 550px; /* Initial positioning for desktop */
+    margin-left: 550px; 
 }
 
 .form_create_post input,
@@ -32,7 +32,7 @@
 }
 
 textarea {
-    resize: vertical; /* Allow vertical resizing of textarea */
+    resize: vertical; 
 }
 
 button[type="submit"] {
@@ -50,28 +50,26 @@ button[type="submit"]:hover {
     background-color: #0e3c61;
 }
 
-/* Media Queries */
 
-/* Phones */
 @media (max-width: 600px) {
     .form_create_post {
-        width: 90%; /* Adjust width for smaller screens */
-        padding: 40px; /* Adjust padding */
+        width: 90%; 
+        padding: 40px;
         margin-left: auto;
         margin-right: auto;
     }
 }
 
-/* Tablets */
+
 @media (min-width: 601px) and (max-width: 900px) {
     .form_create_post {
-        width: 70%; /* Adjust width for tablets */
+        width: 70%;
         margin-left: auto;
         margin-right: auto;
     }
 }
 
-/* Laptops */
+
 @media (min-width: 901px) and (max-width: 1200px) {
     .form_create_post {
         width:300px;
@@ -80,7 +78,7 @@ button[type="submit"]:hover {
     }
 }
 
-/* Desktops */
+
 @media (min-width: 1201px) {
     .form_create_post {
       
