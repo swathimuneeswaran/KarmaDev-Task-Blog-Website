@@ -1,0 +1,267 @@
+.sign-up-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .content2 {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    border-radius: 60px;
+  
+    background-image: radial-gradient(grey, black);
+  }
+  
+  .sign-up-form {
+    width: 350px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 5px 5px 6px 5px gray;
+    border-radius: 8px;
+    /* box-shadow: 0 0 10px rgba(0,0,0,0.1); */
+    color: aqua;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 8px;
+    color: aliceblue;
+  }
+  
+  input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: none;
+  }
+  
+  input::placeholder {
+    color: black;
+  }
+  
+  button {
+    width: 50%;
+  
+    padding: 10px;
+    background-color: rgb(7, 185, 255);
+    color: black;
+    font-style: italic;
+    font-size: medium;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+  }
+  
+  button:hover {
+    background-color: #235b93;
+    color: aqua;
+    border: none;
+  }
+  
+  .con {
+    display: flex;
+    gap: 30px;
+    width: 700px;
+    position: absolute;
+    top: 360px;
+    right: 380px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .sign-up-form {
+      width: 80%;
+      margin: 0 auto;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .sign-up-form {
+      width: 90%; /* Further adjust width for smaller screens */
+    }
+  
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+      font-size: 14px; /* Decrease font size for inputs */
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .container {
+      width: 100%; /* Further adjust width for smaller screens */
+    }
+    .sign-up-form {
+      width: 70%;
+      border: 2px dashed black;
+      -shadow: 5px 5px 5px black;
+    }
+  
+    .content2 {
+      margin-top: 10px;
+      margin-bottom: 20px;
+      border-radius: 0px;
+      background: radial-gradient(rgb(251, 90, 61), rgb(234, 183, 88));
+    }
+    .link_reg {
+      color: black !important;
+    }
+  
+    button:hover{
+        background-color: #235b93!important;
+    }
+  }
+  
+  button {
+    position: relative;
+    padding: 12px 35px;
+    background: rgb(174, 244, 244);
+    font-size: 17px;
+    font-weight: 500;
+    color: #181818;
+    border: 3px solid aqua;
+    border-radius: 8px;
+    box-shadow: 0 0 0 #fec1958c;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    margin-left: 50px;
+  }
+  
+  .star-1 {
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    width: 25px;
+    height: auto;
+    filter: drop-shadow(0 0 0 #fffdef);
+    z-index: -5;
+    transition: all 1s cubic-bezier(0.05, 0.83, 0.43, 0.96);
+  }
+  
+  .star-2 {
+    position: absolute;
+    top: 45%;
+    left: 45%;
+    width: 15px;
+    height: auto;
+    filter: drop-shadow(0 0 0 #fffdef);
+    z-index: -5;
+    transition: all 1s cubic-bezier(0, 0.4, 0, 1.01);
+  }
+  
+  .star-3 {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    width: 5px;
+    height: auto;
+    filter: drop-shadow(0 0 0 #fffdef);
+    z-index: -5;
+    transition: all 1s cubic-bezier(0, 0.4, 0, 1.01);
+  }
+  
+  .star-4 {
+    position: absolute;
+    top: 20%;
+    left: 40%;
+    width: 8px;
+    height: auto;
+    filter: drop-shadow(0 0 0 #fffdef);
+    z-index: -5;
+    transition: all 0.8s cubic-bezier(0, 0.4, 0, 1.01);
+  }
+  
+  .star-5 {
+    position: absolute;
+    top: 25%;
+    left: 45%;
+    width: 15px;
+    height: auto;
+    filter: drop-shadow(0 0 0 #fffdef);
+    z-index: -5;
+    transition: all 0.6s cubic-bezier(0, 0.4, 0, 1.01);
+  }
+  
+  .star-6 {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    width: 5px;
+    height: auto;
+    filter: drop-shadow(0 0 0 #fffdef);
+    z-index: -5;
+    transition: all 0.8s ease;
+  }
+  
+  button:hover {
+    background: transparent;
+    color: #fec195;
+    box-shadow: 0 0 25px #fec1958c;
+  }
+  
+  button:hover .star-1 {
+    position: absolute;
+    top: -80%;
+    left: -30%;
+    width: 25px;
+    height: auto;
+    filter: drop-shadow(0 0 10px #fffdef);
+    z-index: 2;
+  }
+  
+  button:hover .star-2 {
+    position: absolute;
+    top: -25%;
+    left: 10%;
+    width: 15px;
+    height: auto;
+    filter: drop-shadow(0 0 10px #fffdef);
+    z-index: 2;
+  }
+  
+  button:hover .star-3 {
+    position: absolute;
+    top: 55%;
+    left: 25%;
+    width: 5px;
+    height: auto;
+    filter: drop-shadow(0 0 10px #fffdef);
+    z-index: 2;
+  }
+  
+  button:hover .star-4 {
+    position: absolute;
+    top: 30%;
+    left: 80%;
+    width: 8px;
+    height: auto;
+    filter: drop-shadow(0 0 10px #fffdef);
+    z-index: 2;
+  }
+  
+  button:hover .star-5 {
+    position: absolute;
+    top: 25%;
+    left: 115%;
+    width: 15px;
+    height: auto;
+    filter: drop-shadow(0 0 10px #fffdef);
+    z-index: 2;
+  }
+  
+  button:hover .star-6 {
+    position: absolute;
+    top: 5%;
+    left: 60%;
+    width: 5px;
+    height: auto;
+    filter: drop-shadow(0 0 10px #fffdef);
+    z-index: 2;
+  }
+  
+  .fil0 {
+    fill: #fffdef;
+  }
+  

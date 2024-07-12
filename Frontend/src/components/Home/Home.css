@@ -1,0 +1,143 @@
+.home_blog {
+    background: radial-gradient(circle, #d8bfd8, #8b008b);
+    min-height: fit-content;
+    max-height: fit-content;
+    height: auto;
+  }
+  
+  .home_blog h1 {
+    color: white;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    padding-top: 50px;
+  }
+  
+  .create_blog {
+    width: 220px;
+    background-color: transparent;
+    border: 2px solid #580958;
+    margin-left: 50px;
+  }
+  
+  .create_blog:hover {
+    background-color: #235b93 !important;
+  }
+  
+  .box_blog {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); /* Adjust width as needed */
+    grid-auto-rows: minmax(300px, auto); /* Rows will expand based on content */
+    gap: 20px;
+    padding: 20px;
+    text-align: center;
+    min-height: 500px;
+    max-height: fit-content;
+  }
+  
+  .card {
+    position: relative;
+    width: 280px; /* Adjust width as needed */
+    height: auto; /* Adjust height as needed */
+    max-height:500px;
+    padding-bottom: 40px;
+    background: #07182E;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    overflow: hidden;
+    z-index: 1;
+    padding: 20px;
+    color: white;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .card::before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    background-image: linear-gradient(180deg, rgb(0, 183, 255), rgb(255, 48, 255));
+    border-radius: 25px; /* Adjust to match card's border radius */
+    z-index: -2; /* Ensure it is behind everything else */
+    animation: rotBGimg 3s linear infinite;
+  }
+  
+  @keyframes rotBGimg {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .card::after {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    background: #07182E;
+    border-radius: 15px; /* Adjust to be slightly smaller than card's border radius */
+    z-index: -1; /* Ensure it is between the card content and the ::before element */
+  }
+  
+  
+.btn-shine {
+    font-size: 1.5em;
+    margin-top: 60px;
+  }
+  
+  .card p {
+    margin-top: 10px;
+    flex-grow: 1;
+    text-align: center;
+    
+  }
+  
+  .buttons_edit_delete {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+  }
+  
+  .delete_button {
+    background-color: red;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-right: 40px;
+  }
+  
+  .delete_button:hover {
+    background-color: darkred;
+  }
+  
+  .pagination {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    list-style-type: none;
+  }
+  
+  .pagination li {
+    margin: 0 5px;
+    cursor: pointer;
+  }
+  
+  .pagination li a {
+    text-decoration: none;
+    color:black;
+    font-weight: 800;
+  }
+  
+  .pagination li.active a {
+    font-weight: bold;
+  }
